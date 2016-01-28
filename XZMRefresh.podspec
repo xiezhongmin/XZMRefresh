@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'XZMRefresh'
-    s.version      = '0.0.1'
+    s.version      = '1.1.0'
     s.summary      = 'The easiest way to use pull-to-The transverse refresh'
     s.homepage     = 'https://github.com/xiezhongmin/XZMRefresh'
     s.license      = 'MIT'
