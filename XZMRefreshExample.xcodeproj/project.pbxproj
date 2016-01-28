@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC83DAED1C59A85C003BB903 /* XZMBaseRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAD01C59A85C003BB903 /* XZMBaseRefreshView.m */; };
+		AC83DAEE1C59A85C003BB903 /* UIScrollView+XZMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAD31C59A85C003BB903 /* UIScrollView+XZMExtension.m */; };
+		AC83DAEF1C59A85C003BB903 /* UIScrollView+XZMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAD51C59A85C003BB903 /* UIScrollView+XZMRefresh.m */; };
+		AC83DAF01C59A85C003BB903 /* XZMRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAD91C59A85C003BB903 /* XZMRefreshFooter.m */; };
+		AC83DAF11C59A85C003BB903 /* XZMRefreshGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DADB1C59A85C003BB903 /* XZMRefreshGifFooter.m */; };
+		AC83DAF21C59A85C003BB903 /* XZMRefreshNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DADD1C59A85C003BB903 /* XZMRefreshNormalFooter.m */; };
+		AC83DAF31C59A85C003BB903 /* XZMRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAE01C59A85C003BB903 /* XZMRefreshGifHeader.m */; };
+		AC83DAF41C59A85C003BB903 /* XZMRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAE21C59A85C003BB903 /* XZMRefreshHeader.m */; };
+		AC83DAF51C59A85C003BB903 /* XZMRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAE41C59A85C003BB903 /* XZMRefreshNormalHeader.m */; };
+		AC83DAF61C59A85C003BB903 /* XZMRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAE61C59A85C003BB903 /* XZMRefreshConst.m */; };
+		AC83DAF81C59A85C003BB903 /* UIView+XZMFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83DAE91C59A85C003BB903 /* UIView+XZMFrame.m */; };
+		AC83DAF91C59A85C003BB903 /* XZMRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC83DAEB1C59A85C003BB903 /* XZMRefresh.bundle */; };
+		AC8C9D561C21C15E00AB9355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8C9D541C21C15E00AB9355 /* Main.storyboard */; };
+		AC8C9D581C21C15E00AB9355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8C9D571C21C15E00AB9355 /* Assets.xcassets */; };
+		AC8C9D5B1C21C15E00AB9355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8C9D591C21C15E00AB9355 /* LaunchScreen.storyboard */; };
+		AC8C9D661C21C15E00AB9355 /* XZMRefreshExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8C9D651C21C15E00AB9355 /* XZMRefreshExampleTests.m */; };
+		AC8C9D711C21C15E00AB9355 /* XZMRefreshExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8C9D701C21C15E00AB9355 /* XZMRefreshExampleUITests.m */; };
+		AC8C9D861C21C28900AB9355 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8C9D841C21C28900AB9355 /* AppDelegate.m */; };
+		AC8C9D871C21C28900AB9355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8C9D851C21C28900AB9355 /* main.m */; };
+		AC8C9D8D1C21CAB900AB9355 /* XZMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8C9D8C1C21CAB900AB9355 /* XZMTableViewController.m */; };
+		AC8C9D981C21D63C00AB9355 /* XZMCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8C9D961C21D63C00AB9355 /* XZMCollectionViewController.m */; };
+		AC8C9D9D1C21D68C00AB9355 /* XZMLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8C9D9C1C21D68C00AB9355 /* XZMLayout.m */; };
+		AC8C9DA11C21D81A00AB9355 /* XZMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8C9D9F1C21D81A00AB9355 /* XZMCollectionViewCell.m */; };
+		AC8C9DA21C21D81A00AB9355 /* XZMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8C9DA01C21D81A00AB9355 /* XZMCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC8C9D621C21C15E00AB9355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC8C9D401C21C15D00AB9355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8C9D471C21C15E00AB9355;
+			remoteInfo = XZMRefreshExample;
+		};
+		AC8C9D6D1C21C15E00AB9355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC8C9D401C21C15D00AB9355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8C9D471C21C15E00AB9355;
+			remoteInfo = XZMRefreshExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC83DACF1C59A85C003BB903 /* XZMBaseRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMBaseRefreshView.h; sourceTree = "<group>"; };
+		AC83DAD01C59A85C003BB903 /* XZMBaseRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMBaseRefreshView.m; sourceTree = "<group>"; };
+		AC83DAD21C59A85C003BB903 /* UIScrollView+XZMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XZMExtension.h"; sourceTree = "<group>"; };
+		AC83DAD31C59A85C003BB903 /* UIScrollView+XZMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XZMExtension.m"; sourceTree = "<group>"; };
+		AC83DAD41C59A85C003BB903 /* UIScrollView+XZMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XZMRefresh.h"; sourceTree = "<group>"; };
+		AC83DAD51C59A85C003BB903 /* UIScrollView+XZMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XZMRefresh.m"; sourceTree = "<group>"; };
+		AC83DAD81C59A85C003BB903 /* XZMRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefreshFooter.h; sourceTree = "<group>"; };
+		AC83DAD91C59A85C003BB903 /* XZMRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMRefreshFooter.m; sourceTree = "<group>"; };
+		AC83DADA1C59A85C003BB903 /* XZMRefreshGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefreshGifFooter.h; sourceTree = "<group>"; };
+		AC83DADB1C59A85C003BB903 /* XZMRefreshGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMRefreshGifFooter.m; sourceTree = "<group>"; };
+		AC83DADC1C59A85C003BB903 /* XZMRefreshNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefreshNormalFooter.h; sourceTree = "<group>"; };
+		AC83DADD1C59A85C003BB903 /* XZMRefreshNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMRefreshNormalFooter.m; sourceTree = "<group>"; };
+		AC83DADF1C59A85C003BB903 /* XZMRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefreshGifHeader.h; sourceTree = "<group>"; };
+		AC83DAE01C59A85C003BB903 /* XZMRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMRefreshGifHeader.m; sourceTree = "<group>"; };
+		AC83DAE11C59A85C003BB903 /* XZMRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefreshHeader.h; sourceTree = "<group>"; };
+		AC83DAE21C59A85C003BB903 /* XZMRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMRefreshHeader.m; sourceTree = "<group>"; };
+		AC83DAE31C59A85C003BB903 /* XZMRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefreshNormalHeader.h; sourceTree = "<group>"; };
+		AC83DAE41C59A85C003BB903 /* XZMRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMRefreshNormalHeader.m; sourceTree = "<group>"; };
+		AC83DAE61C59A85C003BB903 /* XZMRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "\U001aXZMRefreshConst.m"; sourceTree = "<group>"; };
+		AC83DAE81C59A85C003BB903 /* UIView+XZMFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XZMFrame.h"; sourceTree = "<group>"; };
+		AC83DAE91C59A85C003BB903 /* UIView+XZMFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XZMFrame.m"; sourceTree = "<group>"; };
+		AC83DAEA1C59A85C003BB903 /* XZMRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefreshConst.h; sourceTree = "<group>"; };
+		AC83DAEB1C59A85C003BB903 /* XZMRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XZMRefresh.bundle; sourceTree = "<group>"; };
+		AC83DAEC1C59A85C003BB903 /* XZMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefresh.h; sourceTree = "<group>"; };
+		AC8C9D481C21C15E00AB9355 /* XZMRefreshExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZMRefreshExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8C9D551C21C15E00AB9355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC8C9D571C21C15E00AB9355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC8C9D5A1C21C15E00AB9355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC8C9D5C1C21C15E00AB9355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8C9D611C21C15E00AB9355 /* XZMRefreshExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZMRefreshExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8C9D651C21C15E00AB9355 /* XZMRefreshExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZMRefreshExampleTests.m; sourceTree = "<group>"; };
+		AC8C9D671C21C15E00AB9355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8C9D6C1C21C15E00AB9355 /* XZMRefreshExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZMRefreshExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8C9D701C21C15E00AB9355 /* XZMRefreshExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZMRefreshExampleUITests.m; sourceTree = "<group>"; };
+		AC8C9D721C21C15E00AB9355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8C9D831C21C28900AB9355 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC8C9D841C21C28900AB9355 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC8C9D851C21C28900AB9355 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC8C9D8B1C21CAB900AB9355 /* XZMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMTableViewController.h; sourceTree = "<group>"; };
+		AC8C9D8C1C21CAB900AB9355 /* XZMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMTableViewController.m; sourceTree = "<group>"; };
+		AC8C9D951C21D63C00AB9355 /* XZMCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMCollectionViewController.h; sourceTree = "<group>"; };
+		AC8C9D961C21D63C00AB9355 /* XZMCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMCollectionViewController.m; sourceTree = "<group>"; };
+		AC8C9D9B1C21D68C00AB9355 /* XZMLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMLayout.h; sourceTree = "<group>"; };
+		AC8C9D9C1C21D68C00AB9355 /* XZMLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMLayout.m; sourceTree = "<group>"; };
+		AC8C9D9E1C21D81A00AB9355 /* XZMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMCollectionViewCell.h; sourceTree = "<group>"; };
+		AC8C9D9F1C21D81A00AB9355 /* XZMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMCollectionViewCell.m; sourceTree = "<group>"; };
+		AC8C9DA01C21D81A00AB9355 /* XZMCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZMCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC8C9D451C21C15E00AB9355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8C9D5E1C21C15E00AB9355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8C9D691C21C15E00AB9355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC83DACD1C59A85C003BB903 /* XZMRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				AC83DACE1C59A85C003BB903 /* Base */,
+				AC83DAD11C59A85C003BB903 /* Category */,
+				AC83DAD61C59A85C003BB903 /* Custom */,
+				AC83DAE51C59A85C003BB903 /* Other */,
+				AC83DAEB1C59A85C003BB903 /* XZMRefresh.bundle */,
+				AC83DAEC1C59A85C003BB903 /* XZMRefresh.h */,
+			);
+			path = XZMRefresh;
+			sourceTree = SOURCE_ROOT;
+		};
+		AC83DACE1C59A85C003BB903 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AC83DACF1C59A85C003BB903 /* XZMBaseRefreshView.h */,
+				AC83DAD01C59A85C003BB903 /* XZMBaseRefreshView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AC83DAD11C59A85C003BB903 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AC83DAD21C59A85C003BB903 /* UIScrollView+XZMExtension.h */,
+				AC83DAD31C59A85C003BB903 /* UIScrollView+XZMExtension.m */,
+				AC83DAD41C59A85C003BB903 /* UIScrollView+XZMRefresh.h */,
+				AC83DAD51C59A85C003BB903 /* UIScrollView+XZMRefresh.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AC83DAD61C59A85C003BB903 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				AC83DAD71C59A85C003BB903 /* Footer */,
+				AC83DADE1C59A85C003BB903 /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		AC83DAD71C59A85C003BB903 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				AC83DAD81C59A85C003BB903 /* XZMRefreshFooter.h */,
+				AC83DAD91C59A85C003BB903 /* XZMRefreshFooter.m */,
+				AC83DADA1C59A85C003BB903 /* XZMRefreshGifFooter.h */,
+				AC83DADB1C59A85C003BB903 /* XZMRefreshGifFooter.m */,
+				AC83DADC1C59A85C003BB903 /* XZMRefreshNormalFooter.h */,
+				AC83DADD1C59A85C003BB903 /* XZMRefreshNormalFooter.m */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		AC83DADE1C59A85C003BB903 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				AC83DADF1C59A85C003BB903 /* XZMRefreshGifHeader.h */,
+				AC83DAE01C59A85C003BB903 /* XZMRefreshGifHeader.m */,
+				AC83DAE11C59A85C003BB903 /* XZMRefreshHeader.h */,
+				AC83DAE21C59A85C003BB903 /* XZMRefreshHeader.m */,
+				AC83DAE31C59A85C003BB903 /* XZMRefreshNormalHeader.h */,
+				AC83DAE41C59A85C003BB903 /* XZMRefreshNormalHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		AC83DAE51C59A85C003BB903 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AC83DAE61C59A85C003BB903 /* XZMRefreshConst.m */,
+				AC83DAE81C59A85C003BB903 /* UIView+XZMFrame.h */,
+				AC83DAE91C59A85C003BB903 /* UIView+XZMFrame.m */,
+				AC83DAEA1C59A85C003BB903 /* XZMRefreshConst.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AC8C9D3F1C21C15D00AB9355 = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D4A1C21C15E00AB9355 /* XZMRefreshExample */,
+				AC8C9D641C21C15E00AB9355 /* XZMRefreshExampleTests */,
+				AC8C9D6F1C21C15E00AB9355 /* XZMRefreshExampleUITests */,
+				AC8C9D491C21C15E00AB9355 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC8C9D491C21C15E00AB9355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D481C21C15E00AB9355 /* XZMRefreshExample.app */,
+				AC8C9D611C21C15E00AB9355 /* XZMRefreshExampleTests.xctest */,
+				AC8C9D6C1C21C15E00AB9355 /* XZMRefreshExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC8C9D4A1C21C15E00AB9355 /* XZMRefreshExample */ = {
+			isa = PBXGroup;
+			children = (
+				AC83DACD1C59A85C003BB903 /* XZMRefresh */,
+				AC8C9D7E1C21C28900AB9355 /* Classes */,
+				AC8C9D4B1C21C15E00AB9355 /* Supporting Files */,
+			);
+			path = XZMRefreshExample;
+			sourceTree = "<group>";
+		};
+		AC8C9D4B1C21C15E00AB9355 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D541C21C15E00AB9355 /* Main.storyboard */,
+				AC8C9D571C21C15E00AB9355 /* Assets.xcassets */,
+				AC8C9D591C21C15E00AB9355 /* LaunchScreen.storyboard */,
+				AC8C9D5C1C21C15E00AB9355 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC8C9D641C21C15E00AB9355 /* XZMRefreshExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D651C21C15E00AB9355 /* XZMRefreshExampleTests.m */,
+				AC8C9D671C21C15E00AB9355 /* Info.plist */,
+			);
+			path = XZMRefreshExampleTests;
+			sourceTree = "<group>";
+		};
+		AC8C9D6F1C21C15E00AB9355 /* XZMRefreshExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D701C21C15E00AB9355 /* XZMRefreshExampleUITests.m */,
+				AC8C9D721C21C15E00AB9355 /* Info.plist */,
+			);
+			path = XZMRefreshExampleUITests;
+			sourceTree = "<group>";
+		};
+		AC8C9D7E1C21C28900AB9355 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D801C21C28900AB9355 /* Controller */,
+				AC8C9D9A1C21D68C00AB9355 /* Model */,
+				AC8C9D941C21D5D900AB9355 /* View */,
+				AC8C9D7F1C21C28900AB9355 /* Category */,
+				AC8C9D821C21C28900AB9355 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AC8C9D7F1C21C28900AB9355 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AC8C9D801C21C28900AB9355 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D8B1C21CAB900AB9355 /* XZMTableViewController.h */,
+				AC8C9D8C1C21CAB900AB9355 /* XZMTableViewController.m */,
+				AC8C9D951C21D63C00AB9355 /* XZMCollectionViewController.h */,
+				AC8C9D961C21D63C00AB9355 /* XZMCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC8C9D821C21C28900AB9355 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D831C21C28900AB9355 /* AppDelegate.h */,
+				AC8C9D841C21C28900AB9355 /* AppDelegate.m */,
+				AC8C9D851C21C28900AB9355 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AC8C9D941C21D5D900AB9355 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D9E1C21D81A00AB9355 /* XZMCollectionViewCell.h */,
+				AC8C9D9F1C21D81A00AB9355 /* XZMCollectionViewCell.m */,
+				AC8C9DA01C21D81A00AB9355 /* XZMCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC8C9D9A1C21D68C00AB9355 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C9D9B1C21D68C00AB9355 /* XZMLayout.h */,
+				AC8C9D9C1C21D68C00AB9355 /* XZMLayout.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC8C9D471C21C15E00AB9355 /* XZMRefreshExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8C9D751C21C15E00AB9355 /* Build configuration list for PBXNativeTarget "XZMRefreshExample" */;
+			buildPhases = (
+				AC8C9D441C21C15E00AB9355 /* Sources */,
+				AC8C9D451C21C15E00AB9355 /* Frameworks */,
+				AC8C9D461C21C15E00AB9355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XZMRefreshExample;
+			productName = XZMRefreshExample;
+			productReference = AC8C9D481C21C15E00AB9355 /* XZMRefreshExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC8C9D601C21C15E00AB9355 /* XZMRefreshExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8C9D781C21C15E00AB9355 /* Build configuration list for PBXNativeTarget "XZMRefreshExampleTests" */;
+			buildPhases = (
+				AC8C9D5D1C21C15E00AB9355 /* Sources */,
+				AC8C9D5E1C21C15E00AB9355 /* Frameworks */,
+				AC8C9D5F1C21C15E00AB9355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC8C9D631C21C15E00AB9355 /* PBXTargetDependency */,
+			);
+			name = XZMRefreshExampleTests;
+			productName = XZMRefreshExampleTests;
+			productReference = AC8C9D611C21C15E00AB9355 /* XZMRefreshExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC8C9D6B1C21C15E00AB9355 /* XZMRefreshExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8C9D7B1C21C15E00AB9355 /* Build configuration list for PBXNativeTarget "XZMRefreshExampleUITests" */;
+			buildPhases = (
+				AC8C9D681C21C15E00AB9355 /* Sources */,
+				AC8C9D691C21C15E00AB9355 /* Frameworks */,
+				AC8C9D6A1C21C15E00AB9355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC8C9D6E1C21C15E00AB9355 /* PBXTargetDependency */,
+			);
+			name = XZMRefreshExampleUITests;
+			productName = XZMRefreshExampleUITests;
+			productReference = AC8C9D6C1C21C15E00AB9355 /* XZMRefreshExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC8C9D401C21C15D00AB9355 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.xiaomage.new;
+				TargetAttributes = {
+					AC8C9D471C21C15E00AB9355 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8EB22N3DM2;
+					};
+					AC8C9D601C21C15E00AB9355 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8EB22N3DM2;
+						TestTargetID = AC8C9D471C21C15E00AB9355;
+					};
+					AC8C9D6B1C21C15E00AB9355 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8EB22N3DM2;
+						TestTargetID = AC8C9D471C21C15E00AB9355;
+					};
+				};
+			};
+			buildConfigurationList = AC8C9D431C21C15D00AB9355 /* Build configuration list for PBXProject "XZMRefreshExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC8C9D3F1C21C15D00AB9355;
+			productRefGroup = AC8C9D491C21C15E00AB9355 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC8C9D471C21C15E00AB9355 /* XZMRefreshExample */,
+				AC8C9D601C21C15E00AB9355 /* XZMRefreshExampleTests */,
+				AC8C9D6B1C21C15E00AB9355 /* XZMRefreshExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC8C9D461C21C15E00AB9355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8C9DA21C21D81A00AB9355 /* XZMCollectionViewCell.xib in Resources */,
+				AC8C9D5B1C21C15E00AB9355 /* LaunchScreen.storyboard in Resources */,
+				AC83DAF91C59A85C003BB903 /* XZMRefresh.bundle in Resources */,
+				AC8C9D581C21C15E00AB9355 /* Assets.xcassets in Resources */,
+				AC8C9D561C21C15E00AB9355 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8C9D5F1C21C15E00AB9355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8C9D6A1C21C15E00AB9355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC8C9D441C21C15E00AB9355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC83DAF01C59A85C003BB903 /* XZMRefreshFooter.m in Sources */,
+				AC83DAF11C59A85C003BB903 /* XZMRefreshGifFooter.m in Sources */,
+				AC8C9D8D1C21CAB900AB9355 /* XZMTableViewController.m in Sources */,
+				AC8C9D981C21D63C00AB9355 /* XZMCollectionViewController.m in Sources */,
+				AC8C9D871C21C28900AB9355 /* main.m in Sources */,
+				AC83DAF21C59A85C003BB903 /* XZMRefreshNormalFooter.m in Sources */,
+				AC8C9D9D1C21D68C00AB9355 /* XZMLayout.m in Sources */,
+				AC83DAF31C59A85C003BB903 /* XZMRefreshGifHeader.m in Sources */,
+				AC83DAED1C59A85C003BB903 /* XZMBaseRefreshView.m in Sources */,
+				AC83DAEF1C59A85C003BB903 /* UIScrollView+XZMRefresh.m in Sources */,
+				AC83DAF51C59A85C003BB903 /* XZMRefreshNormalHeader.m in Sources */,
+				AC83DAF81C59A85C003BB903 /* UIView+XZMFrame.m in Sources */,
+				AC83DAF41C59A85C003BB903 /* XZMRefreshHeader.m in Sources */,
+				AC83DAF61C59A85C003BB903 /* XZMRefreshConst.m in Sources */,
+				AC83DAEE1C59A85C003BB903 /* UIScrollView+XZMExtension.m in Sources */,
+				AC8C9DA11C21D81A00AB9355 /* XZMCollectionViewCell.m in Sources */,
+				AC8C9D861C21C28900AB9355 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8C9D5D1C21C15E00AB9355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8C9D661C21C15E00AB9355 /* XZMRefreshExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8C9D681C21C15E00AB9355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8C9D711C21C15E00AB9355 /* XZMRefreshExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC8C9D631C21C15E00AB9355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC8C9D471C21C15E00AB9355 /* XZMRefreshExample */;
+			targetProxy = AC8C9D621C21C15E00AB9355 /* PBXContainerItemProxy */;
+		};
+		AC8C9D6E1C21C15E00AB9355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC8C9D471C21C15E00AB9355 /* XZMRefreshExample */;
+			targetProxy = AC8C9D6D1C21C15E00AB9355 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC8C9D541C21C15E00AB9355 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8C9D551C21C15E00AB9355 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC8C9D591C21C15E00AB9355 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8C9D5A1C21C15E00AB9355 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC8C9D731C21C15E00AB9355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC8C9D741C21C15E00AB9355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC8C9D761C21C15E00AB9355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = XZMRefreshExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiezhongmin.XZMRefresh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC8C9D771C21C15E00AB9355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = XZMRefreshExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiezhongmin.XZMRefresh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC8C9D791C21C15E00AB9355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XZMRefreshExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaomage.meishubo.XZMRefreshExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZMRefreshExample.app/XZMRefreshExample";
+			};
+			name = Debug;
+		};
+		AC8C9D7A1C21C15E00AB9355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XZMRefreshExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaomage.meishubo.XZMRefreshExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZMRefreshExample.app/XZMRefreshExample";
+			};
+			name = Release;
+		};
+		AC8C9D7C1C21C15E00AB9355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XZMRefreshExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaomage.meishubo.XZMRefreshExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XZMRefreshExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AC8C9D7D1C21C15E00AB9355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XZMRefreshExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaomage.meishubo.XZMRefreshExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XZMRefreshExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC8C9D431C21C15D00AB9355 /* Build configuration list for PBXProject "XZMRefreshExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8C9D731C21C15E00AB9355 /* Debug */,
+				AC8C9D741C21C15E00AB9355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8C9D751C21C15E00AB9355 /* Build configuration list for PBXNativeTarget "XZMRefreshExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8C9D761C21C15E00AB9355 /* Debug */,
+				AC8C9D771C21C15E00AB9355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8C9D781C21C15E00AB9355 /* Build configuration list for PBXNativeTarget "XZMRefreshExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8C9D791C21C15E00AB9355 /* Debug */,
+				AC8C9D7A1C21C15E00AB9355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8C9D7B1C21C15E00AB9355 /* Build configuration list for PBXNativeTarget "XZMRefreshExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8C9D7C1C21C15E00AB9355 /* Debug */,
+				AC8C9D7D1C21C15E00AB9355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC8C9D401C21C15D00AB9355 /* Project object */;
+}
