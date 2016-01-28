@@ -5,7 +5,11 @@ The easiest way to use pull-to-The transverse refresh(非常易用的横向刷�
 
 ##APP实例
 ###1.好赞APP
-![(默认刷新)](http://7xkt3g.com1.z0.glb.clouddn.com/Refreshrefresh_haozang.gif)
+![(好赞刷新)](http://7xkt3g.com1.z0.glb.clouddn.com/refreshrefresh_haozang2.gif)
+
+###2.淘宝APP
+![(淘宝刷新)](http://7xkt3g.com1.z0.glb.clouddn.com/refreshrefresh_taobao.gif)
+
 
 ## Content
 * 使用方法参考
