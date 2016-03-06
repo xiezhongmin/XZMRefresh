@@ -1,7 +1,7 @@
-# XZMRefresh
+# iOS使用XZMRefresh实现UITableView或UICollectionView横向刷新
 The easiest way to use pull-to-The transverse refresh(非常易用的横向刷新框架与MJRefresh用法一致)
 #框架开发的缘由:
-## 现今已有越来越多的APP需要横向刷新的需求，然而MJRefresh已不能满足该需求，这套框架已经使用的非常的广泛，并且框架本身封装比较完美集成使用也非常的简单，方法的使用大家也非常的熟悉，所以XZMRefresh本着模仿MJRefresh框架做了横向刷新的Refresh，这样大家不必再去适应繁琐的新框架集成。
+## 现今已有越来越多的APP需要横向刷新的需求，然而MJRefresh已不能满足该需求，该框架已经使用的非常的广泛，并且框架本身封装比较完美，方法的使用大家也非常的熟悉，所以XZMRefresh本着模仿MJRefresh框架做了横向刷新的Refresh，这样大家不必再去适应繁琐的新框架集成。
 
 ##APP实例
 ###1.好赞APP

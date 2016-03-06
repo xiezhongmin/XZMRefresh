@@ -23,7 +23,7 @@ XZMRefreshGifHeader;
  *
  *  @param callback 回调
  */
-- (void)addNormalHeaderWithCallback:(void (^)())callback;
+- (void)xzm_addNormalHeaderWithCallback:(void (^)())callback;
 
 /**
  *  添加一个下拉刷新头部控件
@@ -31,7 +31,7 @@ XZMRefreshGifHeader;
  *  @param target 目标
  *  @param action 回调方法
  */
-- (void)addNormalHeaderWithTarget:(id)target action:(SEL)action;
+- (void)xzm_addNormalHeaderWithTarget:(id)target action:(SEL)action;
 
 #pragma mark - GIF头部刷新
 /**
@@ -39,7 +39,7 @@ XZMRefreshGifHeader;
  *
  *  @param callback 回调
  */
-- (void)addGifHeaderWithCallback:(void (^)())callback;
+- (void)xzm_addGifHeaderWithCallback:(void (^)())callback;
 
 /**
  *  添加一个下拉刷新头部控件
@@ -47,9 +47,9 @@ XZMRefreshGifHeader;
  *  @param target 目标
  *  @param action 回调方法
  */
-- (void)addGifHeaderWithTarget:(id)target action:(SEL)action;
+- (void)xzm_addGifHeaderWithTarget:(id)target action:(SEL)action;
 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// ---------------------------------------------------------------------
 
 #pragma mark - 默认上拉刷新
 /**
@@ -57,7 +57,7 @@ XZMRefreshGifHeader;
  *
  *  @param callback 回调
  */
-- (void)addNormalFooterWithCallback:(void (^)())callback;
+- (void)xzm_addNormalFooterWithCallback:(void (^)())callback;
 
 /**
  *  添加一个上拉刷新尾部控件
@@ -65,7 +65,7 @@ XZMRefreshGifHeader;
  *  @param target 目标
  *  @param action 回调方法
  */
-- (void)addNormalFooterWithTarget:(id)target action:(SEL)action;
+- (void)xzm_addNormalFooterWithTarget:(id)target action:(SEL)action;
 
 #pragma mark - GIF上拉刷新
 /**
@@ -73,7 +73,7 @@ XZMRefreshGifHeader;
  *
  *  @param callback 回调
  */
-- (void)addGifFooterWithCallback:(void (^)())callback;
+- (void)xzm_addGifFooterWithCallback:(void (^)())callback;
 
 /**
  *  添加一个上拉刷新尾部控件
@@ -81,7 +81,7 @@ XZMRefreshGifHeader;
  *  @param target 目标
  *  @param action 回调方法
  */
-- (void)addGifFooterWithTarget:(id)target action:(SEL)action;
+- (void)xzm_addGifFooterWithTarget:(id)target action:(SEL)action;
 
 
 /**

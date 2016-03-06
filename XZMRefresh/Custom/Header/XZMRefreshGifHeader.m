@@ -22,7 +22,6 @@
 @implementation XZMRefreshGifHeader
 
 #pragma mark - 懒加载
-#pragma mark - 懒加载
 - (NSMutableDictionary *)stateImages
 {
     if (!_stateImages) {

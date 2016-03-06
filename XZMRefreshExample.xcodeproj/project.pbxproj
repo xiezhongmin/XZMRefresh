@@ -196,10 +196,10 @@
 		AC83DAE51C59A85C003BB903 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				AC83DAEA1C59A85C003BB903 /* XZMRefreshConst.h */,
 				AC83DAE61C59A85C003BB903 /* XZMRefreshConst.m */,
 				AC83DAE81C59A85C003BB903 /* UIView+XZMFrame.h */,
 				AC83DAE91C59A85C003BB903 /* UIView+XZMFrame.m */,
-				AC83DAEA1C59A85C003BB903 /* XZMRefreshConst.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -269,17 +269,9 @@
 				AC8C9D801C21C28900AB9355 /* Controller */,
 				AC8C9D9A1C21D68C00AB9355 /* Model */,
 				AC8C9D941C21D5D900AB9355 /* View */,
-				AC8C9D7F1C21C28900AB9355 /* Category */,
 				AC8C9D821C21C28900AB9355 /* Other */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		AC8C9D7F1C21C28900AB9355 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		AC8C9D801C21C28900AB9355 /* Controller */ = {

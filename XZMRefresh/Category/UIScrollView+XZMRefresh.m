@@ -86,7 +86,7 @@
  *
  *  @param callback 回调
  */
-- (void)addNormalHeaderWithCallback:(void (^)())callback
+- (void)xzm_addNormalHeaderWithCallback:(void (^)())callback
 {
     // 1.创建新的header
     if (!self.xzm_header) {
@@ -105,7 +105,7 @@
  *  @param target 目标
  *  @param action 回调方法
  */
-- (void)addNormalHeaderWithTarget:(id)target action:(SEL)action
+- (void)xzm_addNormalHeaderWithTarget:(id)target action:(SEL)action
 {
     // 1.创建新的header
     if (!self.xzm_header) {
@@ -115,11 +115,11 @@
     }
     
     // 2.设置目标和回调方法
-    self.xzm_header.beginRefreshingTaget = target;
-    self.xzm_header.beginRefreshingAction = action;
+    self.xzm_header.refreshingTarget = target;
+    self.xzm_header.refreshingAction = action;
 }
 
-- (void)addGifHeaderWithCallback:(void (^)())callback
+- (void)xzm_addGifHeaderWithCallback:(void (^)())callback
 {
     // 1.创建新的header
     if (!self.xzm_gifHeader) {
@@ -138,7 +138,7 @@
  *  @param target 目标
  *  @param action 回调方法
  */
-- (void)addGifHeaderWithTarget:(id)target action:(SEL)action
+- (void)xzm_addGifHeaderWithTarget:(id)target action:(SEL)action
 {
     // 1.创建新的header
     if (!self.xzm_gifHeader) {
@@ -148,8 +148,8 @@
     }
     
     // 2.设置目标和回调方法
-    self.xzm_gifHeader.beginRefreshingTaget = target;
-    self.xzm_gifHeader.beginRefreshingAction = action;
+    self.xzm_gifHeader.refreshingTarget = target;
+    self.xzm_gifHeader.refreshingAction = action;
 }
 
 
@@ -159,7 +159,7 @@
  *
  *  @param callback 回调
  */
-- (void)addNormalFooterWithCallback:(void (^)())callback
+- (void)xzm_addNormalFooterWithCallback:(void (^)())callback
 {
     // 1.创建新的footer
     if (!self.xzm_footer) {
@@ -178,7 +178,7 @@
  *  @param target 目标
  *  @param action 回调方法
  */
-- (void)addNormalFooterWithTarget:(id)target action:(SEL)action
+- (void)xzm_addNormalFooterWithTarget:(id)target action:(SEL)action
 {
     // 1.创建新的footer
     if (!self.xzm_footer) {
@@ -188,11 +188,11 @@
     }
     
     // 2.设置目标和回调方法
-    self.xzm_footer.beginRefreshingTaget = target;
-    self.xzm_footer.beginRefreshingAction = action;
+    self.xzm_footer.refreshingTarget = target;
+    self.xzm_footer.refreshingAction = action;
 }
 
-- (void)addGifFooterWithCallback:(void (^)())callback
+- (void)xzm_addGifFooterWithCallback:(void (^)())callback
 {
     // 1.创建新的footer
     if (!self.xzm_gifFooter) {
@@ -211,7 +211,7 @@
  *  @param target 目标
  *  @param action 回调方法
  */
-- (void)addGifFooterWithTarget:(id)target action:(SEL)action
+- (void)xzm_addGifFooterWithTarget:(id)target action:(SEL)action
 {
     // 1.创建新的footer
     if (!self.xzm_gifFooter) {
@@ -221,8 +221,8 @@
     }
     
     // 2.设置目标和回调方法
-    self.xzm_gifFooter.beginRefreshingTaget = target;
-    self.xzm_gifFooter.beginRefreshingAction = action;
+    self.xzm_gifFooter.refreshingTarget = target;
+    self.xzm_gifFooter.refreshingAction = action;
 }
 
 

@@ -42,9 +42,9 @@
 - (id)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        self.pullToRefreshText = XZMRefreshHeaderPullToRefresh;
+        self.pullToRefreshText    = XZMRefreshHeaderPullToRefresh;
         self.releaseToRefreshText = XZMRefreshHeaderReleaseToRefresh;
-        self.refreshingText = XZMRefreshHeaderRefreshing;
+        self.refreshingText       = XZMRefreshHeaderRefreshing;
     }
     return self;
 }
@@ -55,23 +55,22 @@
     
     self.lastUpdateTimeLabel.hidden = self.updatedTimeHidden;
     
-    CGFloat statusX = 5;
-    CGFloat statusY = 0;
+    CGFloat statusX      = 0;
+    CGFloat statusY      = 0;
     CGFloat statusHeight = self.xzm_height;
-    CGFloat statusWidth = self.xzm_width * 0.5;
+    CGFloat statusWidth  = self.xzm_width * 0.5;
     // 1.状态标签
     if (self.lastUpdateTimeLabel.hidden) statusWidth = self.xzm_width;
     
     self.statusLabel.frame = CGRectMake(statusX, statusY, statusWidth, statusHeight);
    
     // 2.时间标签
-    CGFloat lastUpdateX = statusWidth;
-    CGFloat lastUpdateY = 0;
+    CGFloat lastUpdateX      = statusWidth;
+    CGFloat lastUpdateY      = 0;
     CGFloat lastUpdateHeight = statusHeight;
-    CGFloat lastUpdateWidth = statusWidth;
+    CGFloat lastUpdateWidth  = statusWidth;
     self.lastUpdateTimeLabel.frame = CGRectMake(lastUpdateX, lastUpdateY, lastUpdateWidth, lastUpdateHeight);
 
-    
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview

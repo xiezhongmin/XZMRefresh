@@ -139,8 +139,8 @@ typedef void (*send_type)(void *, SEL, UIView *);
 {
     if (self.state == XZMRefreshStateRefreshing) {
         // 回调
-        if ([self.beginRefreshingTaget respondsToSelector:self.beginRefreshingAction]) {
-//            msgSend((__bridge void *)(self.beginRefreshingTaget), self.beginRefreshingAction, self);
+        if ([self.refreshingTarget respondsToSelector:self.refreshingAction]) {
+            msgSend(msgTarget(self.refreshingTarget), self.refreshingAction, self);
         }
         
         if (self.beginRefreshingCallback) {
@@ -164,6 +164,13 @@ typedef void (*send_type)(void *, SEL, UIView *);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         self.state = XZMRefreshStateNormal;
     });
+}
+
+#pragma mark - 公共方法
+- (void)setRefreshingTarget:(id)target refreshingAction:(SEL)action
+{
+    self.refreshingTarget = target;
+    self.refreshingAction = action;
 }
 
 #pragma mark - 设置状态
@@ -283,8 +290,8 @@ typedef void (*send_type)(void *, SEL, UIView *);
             self.arrowImage.hidden = YES;
             
             // 回调
-            if ([self.beginRefreshingTaget respondsToSelector:self.beginRefreshingAction]) {
-//                objc_msgSend(self.beginRefreshingTaget, self.beginRefreshingAction, self);
+            if ([self.refreshingTarget respondsToSelector:self.refreshingAction]) {
+                msgSend(msgTarget(self.refreshingTarget), self.refreshingAction, self);
             }
             
             if (self.beginRefreshingCallback) {

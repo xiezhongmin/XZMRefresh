@@ -21,6 +21,7 @@ typedef enum {
     XZMRefreshViewTypeHeader = -1, // 头部控件
     XZMRefreshViewTypeFooter = 1 // 尾部控件
 } XZMRefreshViewType;
+
 @interface XZMBaseRefreshView : UIView
 #pragma mark - 父控件
 @property (nonatomic, weak, readonly) UIScrollView *scrollView;
@@ -32,17 +33,11 @@ typedef enum {
 @property (nonatomic, weak, readonly) UIActivityIndicatorView *activityView;
 
 #pragma mark - 回调
-/**
- *  开始进入刷新状态的监听器
- */
-@property (weak, nonatomic) id beginRefreshingTaget;
-/**
- *  开始进入刷新状态的监听方法
- */
-@property (assign, nonatomic) SEL beginRefreshingAction;
-/**
- *  开始进入刷新状态就会调用
- */
+/** 设置回调对象和回调方法 */
+- (void)setRefreshingTarget:(id)target refreshingAction:(SEL)action;
+@property (weak, nonatomic) id refreshingTarget;
+@property (assign, nonatomic) SEL refreshingAction;
+// 开始进入刷新状态就会调用
 @property (nonatomic, copy) void (^beginRefreshingCallback)();
 
 #pragma mark - 刷新相关

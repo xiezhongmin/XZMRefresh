@@ -37,6 +37,9 @@
     
     // 水平滚动
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    CGFloat inset = (self.collectionView.frame.size.width - self.itemSize.width) * 0.5;
+    /** 设置内边距 */
+    self.sectionInset = UIEdgeInsetsMake(0, inset, 0, inset);
 }
 
 /**

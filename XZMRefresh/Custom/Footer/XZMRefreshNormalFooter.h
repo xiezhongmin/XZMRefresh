@@ -8,5 +8,5 @@
 #import "XZMRefreshFooter.h"
 
 @interface XZMRefreshNormalFooter : XZMRefreshFooter
-#pragma mark - 交给子类重写
+
 @end

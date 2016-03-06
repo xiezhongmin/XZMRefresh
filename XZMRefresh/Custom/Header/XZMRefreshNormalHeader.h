@@ -10,5 +10,5 @@
 #import "XZMRefreshHeader.h"
 
 @interface XZMRefreshNormalHeader : XZMRefreshHeader
-#pragma mark - 交给子类重写
+
 @end
