@@ -37,22 +37,8 @@ The easiest way to use pull-to-The transverse refresh(非常易用的横向刷�
 ## <a id="默认"></a>默认
 ```objc
 #pragma mark UICollectionView + 默认刷新
-- (void)addNormalHeader
-{
-__weak typeof(self) weakself = self;
-// 添加下拉刷新头部控件
-[self.collectionView addNormalHeaderWithCallback:^{
-// 增加1条假数据
-weakself.examples += 1;
-// 模拟延迟加载数据，因此2秒后才调用）
-dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-[weakself.collectionView reloadData];
-// 结束刷新
-[weakself.collectionView.xzm_header endRefreshing];
-});
-
-}];
-
+[self.collectionView xzm_addNormalHeaderWithTarget:self action:@selector(loadNewDataWithHeader:)];
+[self.collectionView xzm_addNormalFooterWithTarget:self action:@selector(loadMoreDataWithFooter:)];
 // 自动刷新(一进入程序就下拉刷新)
 [self.collectionView.xzm_header beginRefreshing];
 }
@@ -68,21 +54,8 @@ self.collectionView.xzm_header.updatedTimeHidden = YES;
 
 ## <a id="动画图片"></a>动画图片
 ```objc
-__weak typeof(self) weakself = self;
-// 添加下拉刷新头部控件
-[self.collectionView addGifHeaderWithCallback:^{
-// 进入刷新状态就会回调这个Block
-// 增加1条假数据
-weakself.examples += 1;
-
-// 模拟延迟加载数据，因此2秒后才调用）
-dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-[weakself.collectionView reloadData];
-// 结束刷新
-[weakself.collectionView.xzm_gifHeader endRefreshing];
-});
-
-}];
+[self.collectionView xzm_addGifHeaderWithTarget:self action:@selector(loadNewDataWithHeader:)];
+[self.collectionView xzm_addGifFooterWithTarget:self action:@selector(loadMoreDataWithFooter:)];
 
 // 设置普通状态的动画图片
 NSMutableArray *idleImages = [NSMutableArray array];
@@ -90,8 +63,8 @@ for (NSUInteger i = 1; i<=60; i++) {
 UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"dropdown_anim__000%zd", i]];
 [idleImages addObject:image];
 }
-
 [self.collectionView.xzm_gifHeader setImages:idleImages forState:XZMRefreshStateNormal];
+[self.collectionView.xzm_gifFooter setImages:idleImages forState:XZMRefreshStateNormal];
 
 // 设置正在刷新状态的动画图片
 NSMutableArray *refreshingImages = [NSMutableArray array];
@@ -100,6 +73,7 @@ UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"dropdown_loadi
 [refreshingImages addObject:image];
 }
 [self.collectionView.xzm_gifHeader setImages:refreshingImages forState:XZMRefreshStateRefreshing];
+[self.collectionView.xzm_gifFooter setImages:refreshingImages forState:XZMRefreshStateRefreshing];
 
 // 马上进入刷新状态
 [self.collectionView.xzm_gifHeader beginRefreshing];
@@ -115,21 +89,29 @@ self.collectionView.xzm_gifHeader.updatedTimeHidden = YES;
 
 // 隐藏状态
 self.collectionView.xzm_gifHeader.stateHidden = YES;
+self.collectionView.xzm_gifFooter.stateHidden = YES;
 ```
 ![(动画图片 + 隐藏状态和时间)](http://7xkt3g.com1.z0.glb.clouddn.com/Refreshrefresh_donghua_hide.gif)
 
 ## <a id="自定义文字"></a>自定义文字
 ```objc
-// 设置文字
+// 设置header文字
 [self.collectionView.xzm_header setTitle:@"滑动可以刷新" forState:XZMRefreshStateNormal];
 [self.collectionView.xzm_header setTitle:@"释放立即刷新" forState:XZMRefreshStatePulling];
 [self.collectionView.xzm_header setTitle:@"正在刷新中 ..." forState:XZMRefreshStateRefreshing];
-
 // 设置字体
 self.collectionView.xzm_header.font = [UIFont systemFontOfSize:15];
-
 // 设置颜色
 self.collectionView.xzm_header.textColor = [UIColor redColor];
+
+// 设置footer文字
+[self.collectionView.xzm_footer setTitle:@"滑动可以刷新" forState:XZMRefreshStateNormal];
+[self.collectionView.xzm_footer setTitle:@"释放立即刷新" forState:XZMRefreshStatePulling];
+[self.collectionView.xzm_footer setTitle:@"正在加载中数据 ..." forState:XZMRefreshStateRefreshing];
+// 设置字体
+self.collectionView.xzm_footer.font = [UIFont systemFontOfSize:17];
+// 设置颜色
+self.collectionView.xzm_footer.textColor = [UIColor blueColor];
 ```
 ![(自定义文字)](http://7xkt3g.com1.z0.glb.clouddn.com/Refreshrefresh_text.gif)
 
