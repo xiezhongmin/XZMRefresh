@@ -38,12 +38,13 @@
     }
     return _statusLabel;
 }
-
+//做一个简单的测试，多有打扰请见谅
 /**
  *  箭头图片
  */
 - (UIImageView *)arrowImage
 {
+     NSString *me = @"fdf";
     if (!_arrowImage && (self != [XZMRefreshGifHeader class] || self != [XZMRefreshGifFooter class])) {
         UIImageView *arrowImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"XZMRefresh.bundle/arrow.png"]
 ];
