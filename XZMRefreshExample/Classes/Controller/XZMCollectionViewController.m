@@ -86,6 +86,7 @@ NSString *const XZMCellIdentifier = @"cellIdentifier";
         UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"dropdown_anim__000%zd", i]];
         [idleImages addObject:image];
     }
+    
     [self.collectionView.xzm_gifHeader setImages:idleImages forState:XZMRefreshStateNormal];
     [self.collectionView.xzm_gifFooter setImages:idleImages forState:XZMRefreshStateNormal];
     
